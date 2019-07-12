@@ -7,7 +7,7 @@ $(document).ready(() => {
 });
 
 function getMovies(searchText) {
-    axios.get(" https://api.themoviedb.org/3/movie/550?api_key=355ef8854b068047792469ece20f50fa&s=" + searchText)
+    axios.get("'API KEY GOES HERE's=" + searchText)
         .then((response) => {
             console.log(response);
             let movies = response.data.Search;
@@ -40,7 +40,7 @@ function movieSelected(id) {
 function getMovie() {
     let movieId = sessionStorage.getItem('movieId');
 
-    axios.get(" http://www.omdbapi.com/?i=tt3896198&apikey=d844e33b&i=" + movieId)
+    axios.get("'API KEY GOES HERE'i=" + movieId)
         .then((response) => {
             console.log(response);
             let movie = response.data;
